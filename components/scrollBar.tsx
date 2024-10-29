@@ -32,7 +32,7 @@ export default function ScrollBar({ items }: { items: any[] }) {
         <div ref={containerRef} className="relative scroll-container flex bg-white rounded-2xl w-full  p-4 gap-2" style={{ height: '300px !important' }}>
           {items.map((item:any, index: any) => (
             <div key={index} className="relative flex-shrink-0 w-1/2 bg-blue-200 p-4 cursor-pointer "   >
-            <Image  layout="fill" objectFit="cover" src={item.url} alt="" ></Image>
+            <Image fill style={{objectFit:"cover"}} src={item.url} alt="" ></Image>
             </div>
           ))}
     

@@ -41,10 +41,10 @@ export default function ScrollBar({ items }: { items: any }) {
                         <div ref={containerRef} className=" scroll-container  w-full h-full flex flex-row gap-3">
 
                             {items.items.map((item: any, index: any) => (
-                                <div onClick={handleNavigate} className=" group w-48 h-full cursor-pointer " >
+                                <div key={item.id || index} onClick={handleNavigate} className=" group w-48 h-full cursor-pointer " >
                                     <div className="w-full h-2/3" >
                                         <div className="group-hover:brightness-75" style={{ position: 'relative', width: '100%', height: '100%' }}>
-                                            <Image layout="fill" objectFit="cover" src={item.img} alt={""}></Image>
+                                            <Image fill style={{objectFit:"cover"}} src={item.img} alt={""}></Image>
                                         </div>
                                     </div>
                                     <div className="group-hover:bg-slate-50 w-full h-1/3  flex flex-col pl-2 pr-2 border-solid border-2  border-beamin-50">

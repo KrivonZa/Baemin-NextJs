@@ -15,7 +15,7 @@ export default function ResultFood({ items }: { items: any[] }) {
                 {items.map((item:any)=>(
                 <div onClick={handleNavigate} key={item.id} className='group w-[19%] h-56 bg-white flex flex-col cursor-pointer'>
                     <div className='group-hover:brightness-105 w-full h-[60%] relative'>
-                        <Image layout="fill" objectFit="cover" src={item.img} alt={""}></Image>
+                        <Image fill style={{objectFit:"cover"}} src={item.img} alt={""}></Image>
                     </div>
                     <div className='group-hover:bg-slate-50 w-full h-[40%] pr-3  border border-solid'>
                         <div className="ml-3  w-full truncate text-base h-[30%] ">

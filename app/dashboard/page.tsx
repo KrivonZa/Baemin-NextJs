@@ -30,7 +30,7 @@ export default function Home() {
             url: '/images/map3.png',
         },
         {
-            id: '3',
+            id: '4',
             name: 'anh 32',
             url: '/images/map4.png',
         }
@@ -46,35 +46,35 @@ export default function Home() {
                 kind: 'Quan An'
             },
             {
-                id: '1',
+                id: '2',
                 name: ' Gà Ủ Muối Hoa Tiêu - Food',
                 adrress: '4A Đường Số 71, P. Tân Quy, Quận 7, TP. HCM',
                 img: '/food/ga1.jpg',
                 kind: 'Quan An'
             },
             {
-                id: '1',
+                id: '3',
                 name: ' Gà Ủ Muối Hoa Tiêu - Food',
                 adrress: '4A Đường Số 71, P. Tân Quy, Quận 7, TP. HCM',
                 img: '/food/ga1.jpg',
                 kind: 'Quan An'
             },
             {
-                id: '1',
+                id: '4',
                 name: ' Gà Ủ Muối Hoa Tiêu - Food',
                 adrress: '4A Đường Số 71, P. Tân Quy, Quận 7, TP. HCM',
                 img: '/food/ga1.jpg',
                 kind: 'Quan An'
             },
             {
-                id: '1',
+                id: '5',
                 name: ' Gà Ủ Muối Hoa Tiêu - Food',
                 adrress: '4A Đường Số 71, P. Tân Quy, Quận 7, TP. HCM',
                 img: '/food/ga1.jpg',
                 kind: 'Quan An'
             },
             {
-                id: '1',
+                id: '6',
                 name: ' Gà Ủ Muối Hoa Tiêu - Food',
                 adrress: '4A Đường Số 71, P. Tân Quy, Quận 7, TP. HCM',
                 img: '/food/ga1.jpg',
@@ -86,7 +86,7 @@ export default function Home() {
     return (
         <>
             <div className="grid grid-cols-12 gap-4">
-                <div className="col-span-3 pt-3 pl-8 pr-8  z-40">
+                <div className="col-span-3 pt-3 pl-8 pr-8 z-40">
                     <div className="flex flex-col fixed  bg-white w-64 rounded-2xl  pl-3 pt-2  pb-5 gap-3  ">
                         <span>Thực đơn </span>
                         {items.map((item, index) => (

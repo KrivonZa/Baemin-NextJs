@@ -1,4 +1,5 @@
 'use client'
+// màn hình carousel item food
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import { BhuTuka_Expanded_One } from "next/font/google";
 import { title } from "process";
@@ -31,8 +32,8 @@ export default function ScrollBar({ items }: { items: any }) {
 
     return (
         <>
-            <div className=" bg-white rounded-2xl w-full   " style={{ height: '300px !important' }}>
-                <div className="w-full h-full flex flex-col px-4 pt-4 pb-2" style={{ height: '300px !important' }}>
+            <div className=" bg-white rounded-2xl w-full   " style={{ height: '300px' }}>
+                <div className="w-full h-full flex flex-col px-4 pt-4 pb-2" style={{ height: '300px' }}>
                     <div className="relative ml-3 text-xl font-bold mb-2">  {items.title} </div>
                     <div className="w-full relative h-full">
                     {currentIndex>0 &&

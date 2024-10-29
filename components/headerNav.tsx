@@ -10,11 +10,11 @@ import { useRouter } from "next/navigation";
 export default function HeaderNav() {
     const router = useRouter();
     const onSearch: SearchProps['onSearch'] = (value, _e, info) => {
-        router.push('/sreach')
+        router.push('/search')
 
     };
     const navigation =()=>{
-        router.push('/dashboard')
+        router.push('/dashboard');
     }
     return (
         <div className="w-full h-fix bg-white flex flex-row fixed  py-3 gap-4 justify-items-center	justify-center z-50	">
